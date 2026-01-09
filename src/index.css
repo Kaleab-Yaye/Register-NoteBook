@@ -1,0 +1,73 @@
+/* RE Toolkit - Minimalist Grayscale Theme */
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-card: #141414;
+  --bg-card-hover: #1a1a1a;
+  --text-main: #e0e0e0;
+  --text-muted: #666666;
+  --accent-primary: #888888;
+  --accent-secondary: #555555;
+  --border-color: #222222;
+  --glass-bg: #111111;
+  --glass-border: #1f1f1f;
+  --font-sans: 'Consolas', 'Monaco', 'Courier New', monospace;
+  --font-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Custom Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+/* Glass Panel - Now just a subtle border */
+.glass-panel {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+
+textarea:focus,
+input:focus {
+  outline: 1px solid #444444;
+  outline-offset: 0;
+}
+
+/* Selection */
+::selection {
+  background: #333333;
+  color: #ffffff;
+}
+
+/* Placeholder */
+::placeholder {
+  color: #444444;
+}
